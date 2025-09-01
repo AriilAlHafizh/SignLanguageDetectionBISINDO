@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi Bahasa Isyarat</title>
+    <link rel="stylesheet" href="./static/st.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1>Sign Language Detection System</h1>
+            <p class="subtitle">Real-time AI-powered sign language recognition technology</p>
+        </div>
+
+        <div class="content-grid">
+            <div class="video-section">
+                <div class="video-header">
+                    <div class="video-title">
+                        <span class="status-indicator"></span>
+                        Live Camera Feed
+                    </div>
+                </div>
+                <div class="video-container">
+                    <img id="video-stream" src="/video_feed" alt="Live Video Stream">
+                </div>
+            </div>
+
+            <div class="results-panel">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value" id="session-count">0</div>
+                        <div class="stat-label">Detections</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="avg-confidence">0%</div>
+                        <div class="stat-label">Avg Confidence</div>
+                    </div>
+                </div>
+
+                <div class="prediction-card">
+                    <div class="card-header">
+                        <div class="card-title">Current Prediction</div>
+                    </div>
+                    <div class="prediction-value" id="prediction">Waiting for input...</div>
+                </div>
+
+                <div class="prediction-card">
+                    <div class="card-header">
+                        <div class="card-title">Confidence Level</div>
+                    </div>
+                    <div class="accuracy-value" id="accuracy">-</div>
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" id="confidence-fill"></div>
+                    </div>
+                </div>
+
+                <div class="history-section">
+                    <div class="history-header">
+                        <div class="history-title">
+                            Detection History
+                        </div>
+                        <button class="clear-btn" id="clearBtn">Clear</button>
+                    </div>
+                    <textarea id="history" readonly placeholder="Detection results will appear here..."></textarea>
+                    <div class="action-buttons">
+                        <button class="save-btn" id="saveBtn">💾 Export History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./static/ap.js"></script>
+</body>
+
+</html>
