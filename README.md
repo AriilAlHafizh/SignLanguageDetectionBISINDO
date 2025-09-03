@@ -62,3 +62,6 @@ Sistem Deteksi Bahasa Isyarat BISINDO berbasis AI yang mampu mengenali gerakan t
 ---
 
 Kontribusi, pertanyaan, dan masukan sangat diterima!
+
+**##LINK DATASET**
+https://drive.google.com/file/d/18vjPXAkxnm2AUoNbmAdHIlpAKNkOoeSX/view?usp=sharing
